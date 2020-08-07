@@ -1,7 +1,7 @@
 <template>
   <Page>
     <ActionBar>
-      <Label text="Home"></Label>
+      <Label text="Inicio"></Label>
     </ActionBar>
 
     <ListView for="item in items" @itemTap="onItemTap">
@@ -20,6 +20,7 @@ import ItemDetails from "./ItemDetails";
 export default {
     data: () => {
         return {
+
             items: [
                 {
                     name: "Item 1",

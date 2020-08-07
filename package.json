@@ -13,7 +13,12 @@
   "repository": "<fill-your-repository-here>",
   "dependencies": {
     "@nativescript/theme": "~2.3.0",
+    "axios": "^0.19.2",
+    "nativescript-cardview": "^3.2.0",
+    "nativescript-material-cardview": "^3.2.19",
+    "nativescript-theme-core": "^2.0.24",
     "nativescript-vue": "~2.4.0",
+    "primeflex": "^2.0.0-rc.1",
     "tns-core-modules": "~6.4.0"
   },
   "devDependencies": {

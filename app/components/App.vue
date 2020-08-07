@@ -1,21 +1,37 @@
 <template lang="html">
     <BottomNavigation>
+        
+        <!-- Menú -->
         <TabStrip>
             <TabStripItem class="navigation__item">
-                <Label text="Home"></Label>
+                <Label text="Inicio"></Label>
                 <Image src.decode="font://&#xf015;" class="fas t-36"></Image>
             </TabStripItem>
             <TabStripItem class="navigation__item">
-                <Label text="Browse"></Label>
-                <Image src.decode="font://&#xf1ea;" class="far t-36"></Image>
+                <Label text="Gestión"></Label>
+                <Image src.decode="font://&#xf1ad;" class="far t-36"></Image>
             </TabStripItem>
             <TabStripItem class="navigation__item">
-                <Label text="Search"></Label>
-                <Image src.decode="font://&#xf002;" class="fas t-36"></Image>
+                <Label text="Perfil"></Label>
+                <Image src.decode="font://&#xf007;" class="fas fa-36"></Image>
             </TabStripItem>
         </TabStrip>
+        <!-- Menú -->
 
+        <!-- FEED -->
         <TabContentItem>
+            <Frame>
+                <SalonesList />
+            </Frame>
+        </TabContentItem>
+        <!-- FEED -->
+
+
+        <!-- SALONES -->
+
+        <!-- PERFIL -->
+
+        <!-- <TabContentItem>
             <Frame>
                 <Items />
             </Frame>
@@ -31,7 +47,7 @@
             <Frame>
                 <Search />
             </Frame>
-        </TabContentItem>
+        </TabContentItem> -->
 
     </BottomNavigation>
 </template>
@@ -41,11 +57,16 @@ import Items from "./Items.vue";
 import Browse from "./Browse.vue";
 import Search from "./Search.vue";
 
+// Secciones
+import SalonesList from "../salon/SalonesList.vue";
+
+
 export default {
   components: {
     Items,
     Browse,
-    Search
+    Search,
+    SalonesList
   }
 };
 </script>
